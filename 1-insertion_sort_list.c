@@ -13,7 +13,7 @@ void insertion_sort_list(listint_t **list)
 	while (current != NULL)
 	{
 		tracker = current;
-		while (current->prev != NULL && current->n < current->prev->n )
+		while (current->prev != NULL && current->n < current->prev->n)
 		{
 			temp = current->prev;
 			current->prev = temp->prev;
