@@ -26,9 +26,8 @@ void insertion_sort_list(listint_t **list)
 			else
 				*list = current;
 			current->next = temp;
-
+			print_list(*list);
 		}
-		print_list(*list);
 		current = tracker->next;
 	}
 }
