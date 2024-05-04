@@ -10,6 +10,8 @@ void insertion_sort_list(listint_t **list)
 	listint_t *current = (*list)->next;
 	listint_t *temp, *tracker = NULL;
 
+	if (list == NULL || *list == NULL)
+		return;
 	while (current != NULL)
 	{
 		tracker = current;
