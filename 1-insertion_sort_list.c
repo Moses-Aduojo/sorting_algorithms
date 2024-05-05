@@ -11,7 +11,7 @@ void insertion_sort_list(listint_t **list)
 	listint_t *temp, *tracker = NULL;
 
 	if (list == NULL || *list == NULL)
-		return;
+		exit(EXIT_FAILURE);
 	while (current != NULL)
 	{
 		tracker = current;
